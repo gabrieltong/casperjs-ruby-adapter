@@ -63,9 +63,9 @@ class Yii extends require('casper').Casper
 	p:(obj,type='debug')-> @log JSON.stringify(obj),type
 	logJson:(obj,type='debug')-> @log JSON.stringify(obj),type
 	json:(array)->
-		@log '[json>>]'
+		@log '[json>>]','info'
 		@p array,'info'
-		@log '[json<<]'
+		@log '[json<<]','info'
 	_save:(url,key,objects)->
 		@then ->
 			data = 
